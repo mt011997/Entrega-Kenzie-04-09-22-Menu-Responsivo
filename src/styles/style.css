@@ -1,0 +1,128 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--gray-4);
+    border-bottom: 2px solid var(--gray-4);
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    padding: 0 1rem;
+}
+
+header h2{
+    color: var(--blue-1);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.icone{
+    width: 3rem;
+    position: absolute;
+    right: 0;
+    top: 20;
+}
+
+.container{
+    display: block;
+    position: relative;
+    width: 100%;
+    right: 6rem;
+    top: 13rem;
+    margin-top: -56.2rem;
+    transition: 1000ms ease-in-out;
+}
+
+.hidden{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    right: 6rem;
+    top: 14rem;
+    transition: 1000ms ease-in-out;
+}
+
+.container ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.all{
+    color: var(--gray-1);
+    font-weight: bold;
+}
+
+li{
+    color: var(--gray-2);
+    margin: 1.2rem;
+}
+
+input{
+    width: 11rem;
+    height: 2.3rem;
+    padding: 0.2rem;
+    border-radius: 8px;
+    margin-left: 16px;
+    background-color: var(--gray-5);
+    border: none;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.usuario span {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 900px) {
+
+    header {
+        padding: 0 6.2rem;
+    }
+
+    .icone {
+        display: none;
+    }
+
+    .container ul{
+        flex-direction: row;
+    }
+
+    header h2 {
+        font-size: 18px;
+        margin-right: 2.5rem;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: static;
+        right: 0;
+        top: 0;
+        margin-top: 0;
+        transition: none;
+    }
+
+    .input {
+        display: flex;
+    }
+
+    input {
+        margin-top: 0;
+    }
+
+    .usuario {
+        margin-top: 0;
+    }
+
+
+
+}
